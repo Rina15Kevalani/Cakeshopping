@@ -1,0 +1,47 @@
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+      <div class="container">
+          <div class="section-title">
+              <h4 class="underline-animation text-uppercase" style="letter-spacing: 5px;">About</h4><br>
+              <h1 class="text-with-gradient ">CakeShopee</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 py-0 py-lg-5">
+              <h1 class="mb-3">Our Story</h1>
+              <p>To, The Cake Shop Bakery, <strong>CakeShopee </strong> best bakery.</p>
+               <p>We carefully select our ingredients for their freshness, flavor and natural value.
+                 We choose organic, locally grown products when available. Everything we make embodies our commitment to consistency and excellence.
+                 The heart of the bakery is a small, dedicated group of hard working bakers. We are grateful to our amazing staff, loyal customers,
+                and the most supportive local community who allow us to do the work we love every day.
+                Over the years, CakeShopee's legacy grew stronger.
+                It wasn't just a bakery; it was a symbol of love, passion,
+                and the sweetness of life. Amelia's dream had come true – she had created a place where people found not only delicious cakes but also moments of happiness and connection.
+                And so, the story of CakeShopee continued to unfold, one cake at a time, making the world a sweeter, happier place for all who entered its doors.</p>
+              </div>
+
+
+
+            <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+              <div class="position-relative h-100">
+                <img class="position-absolute w-100 h-100" src="../../assets/images/about1.jpg" style="object-fit: cover;">
+              </div>
+            </div>
+            <div class="col-lg-4 py-0 py-lg-5">
+              <h1 class="mb-3">Our Vision</h1>
+              <p>“To always help our Customers find Moments of Happiness and Satisfaction by delivering superior bakery products and services that exceed their expectations.”</p>
+              <h2>Our core values</h2>
+              <p>"At Cakeshopee, our mission is to bake happiness and create moments of joy through our delicious offerings. We are committed to",</p>
+              <button class="btn btn-primary font-weight-bold py-2 px-4 mt-2" *ngIf="!showFullContent" (click)="toggleList()">
+                {{ showFullContent ? 'Read Less' : 'Read More' }}
+              </button>
+              <div *ngIf="showFullContent">
+                <ul>
+                  <li *ngFor="let message of messages"><i class="fa fa-check text-primary mr-3"></i>{{ message }}</li>
+                </ul>
+              </div>
+            </div>
+      </div>
+      </div>
+    </div>
+  <!-- About End -->

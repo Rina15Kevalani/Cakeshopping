@@ -1,0 +1,104 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.logo-img {
+ max-width: 80px;
+height: auto;
+ display: block;
+ margin: 0 auto;
+ border: 5px solid rgba(89, 112, 194, 0.525);
+ border-radius: 60%;
+}
+.navbar-toggler {
+  border: none;
+  background-color: rgb(228, 71, 144);
+}
+
+.navbar-toggler {
+  background-color: #fff;
+  border-color: #fff;
+}
+/* Change the color of the navbar-brand text as it scrolls */
+@keyframes changeBrandColor {
+  0% {
+    color: rgb(105, 154, 209); /* Change to your initial color */
+  }
+  25% {
+    color: rgb(228, 153, 139); /* Change to your desired color */
+  }
+  50% {
+    color: rgb(172, 210, 172); /* Change to your desired color */
+  }
+  75% {
+    color: rgba(250, 170, 22, 0.626); /* Change to your desired color */
+  }
+  100% {
+    color: purple; /* Change to your desired color */
+  }
+}
+
+
+
+.navbar-toggler-icon {
+  background-color: #000;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .navbar-collapse {
+    background-color: #3333332c;
+  }
+
+  .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+    color: #fff;
+  }
+}
+/* Set a linear gradient background for the navbar */
+.navbar {
+  animation: fadeIn 0.5s ease-in-out;
+  background-color:  #ec41726f;
+  -webkit-animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-family: cursive;
+  font-size: large;
+  font-weight: 800;
+  word-spacing: 40px;
+}
+.navbar-nav .nav-link:hover{
+  color: #438ebd;
+  box-shadow:#ff2377;
+}

@@ -1,0 +1,184 @@
+/*
+.cardList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+*/
+/* Column Gap
+.cardList > * {
+  box-sizing: border-box;
+}
+.cardList > *:not(:last-child) {
+  margin-right: 32px;
+}
+*/
+/* Item sizing
+.cardListItem {
+  flex: 0 1 calc(33.3% - 32px);
+}
+*/
+/* medium size viewport
+@media screen and (max-width: 959px) {
+  */
+  /* Column Gap
+  .cardList > *:not(:last-child) {
+    margin-right: 32px;
+  }
+  */
+  /* Item sizing
+  .cardListItem {
+    flex: 0 1 calc(50% - 32px);
+  }
+}
+*/
+
+/* small size viewport
+@media screen and (max-width: 599px) {
+  .cardList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .cardList > *:not(:last-child) {
+    margin-right: unset;
+    margin-bottom: 32px;
+  }
+}
+*/
+
+ /* .cardList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.cardList > * {
+  box-sizing: border-box;
+}
+.cardList > *:not(:last-child) {
+  margin-right: 32px;
+}
+
+.cardListItem {
+  flex: 0 1 calc(33.3% - 32px);
+}
+
+@media screen and (max-width: 959px) {
+
+  .cardList > *:not(:last-child) {
+    margin-right: 32px;
+  }
+
+  .cardListItem {
+    flex: 0 1 calc(50% - 32px);
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .cardList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .cardList > *:not(:last-child) {
+    margin-right: unset;
+    margin-bottom: 32px;
+  }
+}  */
+.btn-mk{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.bk7{
+  background-image: url("/assets/image/cake1");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 10px;
+}
+.book-card{
+  background-image: linear-gradient(80deg, #c6104d4e, #ffff);
+
+
+}
+#img1{
+  width: 100%;
+  height: 220px;
+}
+
+p, .text{
+  color: rgba(183, 38, 38, 0.571);
+  font-family: cursive;
+}
+
+.sec{
+  font-size: larger;
+  }
+  .card-container {
+    margin: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.card img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+
+.card .fs-3 {
+    font-size: 1.5rem;
+}
+
+
+.card .book-price {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.card .btn {
+    background-color: #5c7be1;
+    color: #fff;
+    border: none;
+}
+.card .btn:hover{
+  color: #c11d51;
+  background-color: rgba(210, 105, 30, 0.283);
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  justify-content: center;
+}
+.navbar{
+  height: 70px;
+  background-image: linear-gradient(80deg, #c11d51, #fcfcfc);
+}
+a{
+  cursor: pointer;
+}
+
+#sl{
+  margin: 10px auto;
+  margin-left: 10px;
+  transform: translate(auto);
+  background-color: rgba(88, 11, 11, 0.04);
+  border: 1px solid;
+}
+
+.container12 {
+  max-width: 40rem
+}
+
+
+
+
+

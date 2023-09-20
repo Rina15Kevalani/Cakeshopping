@@ -1,0 +1,147 @@
+<section class="py-2 text-center container sec">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="text">Cakes</h1>
+      <p class="text">“A good quality cake should have a texture that is smooth and pliable.
+        They measure this by touching the cake. The texture of the cake completely depends on
+        the physical condition of the crumb and the type of grain. A good quality cake will have a soft,
+         velvety texture without weakness, and it should not be crumbly.”.
+        <br>
+        -cakeshopee
+      </p>
+    </div>
+  </div>
+</section>
+
+<nav class="navbar navbar-expand-lg navbar-dark my-3">
+  <div class="container-fluid">
+    <label class="form-label me-2" for="ct_catid">
+      <h3>Category</h3>
+    </label>
+    <select id="sl" aria-describedby="emailHelp" [(ngModel)]="catid" (change)="showValue()">
+      <option *ngFor="let a of catObj" [value]="a.catid">{{a.catnm}}</option>
+    </select>
+    <button data-bs-target="#showcart" (click)="showcart()"
+      class="btn btn-outline-dark bg-light material-symbols-outlined float-end" data-bs-toggle="modal" type="submit"><i
+        class="fa fa-cart-arrow-down" style="font-size:48px;color:rgb(28, 128, 172)"></i></button>
+  </div>
+</nav>
+
+
+
+<div class="mb-3 container">
+  <div class="modal fade" id="showcart" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Description : </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <table class="table table-responsive">
+            <tr>
+              <td>Name</td>
+              <td>Quantity</td>
+              <td>Price</td>
+              <td>Image</td>
+              <td>Action</td>
+            </tr>
+            <tr *ngFor="let a of cart">
+              <td>{{a.prnm}}</td>
+              <td>{{a.qty}}</td>
+              <td>{{a.qty * a.price}}</td>
+              <td><img src="data:image/*;base64,{{a.pic}}" height="50%" width="50%"></td>
+              <td><button (click)="deletecart(a)" class="btn btn-danger">
+                  <span class="material-symbols-outlined">
+                    delete
+                  </span>
+                </button></td>
+            </tr>
+          </table>
+          <hr>
+
+
+          <div class="container12">
+            <div id="h1dv">
+              <h1 id="s1">Shipping</h1>
+            <p id="sp1">Please enter your shipping details.</p>
+            </div>
+            <hr />
+            <div class="form">
+
+              <div class="fields fields--2">
+                <label class="field">
+                  <span class="field__label" for="firstname">First name</span>
+                  <input class="field__input form-control" type="text" id="firstname" />
+                </label>
+                <label class="field">
+                  <span class="field__label" for="lastname">Last name</span>
+                  <input class="field__input form-control" type="text" id="lastname"  />
+                </label>
+              </div>
+              <label class="field">
+                <span class="field__label" for="address">Address</span>
+                <input class="field__input form-control" type="text" id="address" />
+              </label>
+              <label class="field">
+                <span class="field__label" for="country">Country</span>
+                <input class="field__input form-control" type="text" id="address" />
+              </label>
+              <div class="fields fields--3">
+                <label class="field">
+                  <span class="field__label" for="zipcode">Zip code</span>
+                  <input class="field__input form-control" type="text" id="zipcode" />
+                </label>
+                <label class="field">
+                  <span class="field__label" for="city">City</span>
+                  <input class="field__input form-control" type="text" id="city" />
+                </label>
+                <label class="field">
+                  <span class="field__label" for="state">State</span>
+                  <input class="field__input form-control" type="text" id="city"  />
+                </label>
+              </div>
+            </div>
+            <hr>
+            <button class="button" (click)="saveF()">Save</button>
+          </div>
+          <hr>
+          <h5>Total : {{tot}}</h5>
+          <hr>
+
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <button type="button" class="ord btn btn-warning" (click)="ordernow()" aria-label="Order Now">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+
+
+<div class="bk7 album py-5 ">
+  <div class="container">
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-4">
+      <ng-container *ngFor="let a of prdtbycat">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="data:image/*;base64,{{a.pic}}" width="100%" height="300px">
+              <div class="card-body">
+                <strong class="fs-3" data-bs-toggle="modal" data-bs-target="#showdescrip"> {{a.prnm}} </strong>
+                <div class="book-price">Price: {{a.price | currency : 'INR'}}</div>
+                <button type="button" class="btn btn-outline-success my-3" (click)="addtolocalstorage(a)">Add
+                  Cart</button>
+              </div>
+          </div>
+      </div>
+
+
+
+  </ng-container>
+    </div>
+
+  </div>
+</div>

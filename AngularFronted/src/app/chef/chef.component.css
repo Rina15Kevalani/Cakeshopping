@@ -1,0 +1,97 @@
+
+.bg-light {
+  background: #fafafa !important;
+}
+
+.ftco-section {
+  padding: 7em 0;
+  position: relative;
+}
+
+.heading-section {
+  position: relative;
+}
+
+.heading-section .subheading {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  font-weight: normal;
+  font-size: 100px;
+  display: block;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.2);
+  color: #c8a97e;
+  line-height: 1;
+  margin-top: 0;
+  z-index: -1;
+  font-family: "Great Vibes", cursive;
+}
+
+.heading-section h2 {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.menu-wrap {
+  margin-bottom: 0;
+}
+
+.heading-menu h3 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+.staff {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.staff:hover {
+  transform: scale(1.05);
+}
+
+.staff .img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  width: 150px;
+  height: 150px;
+}
+
+.staff .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.staff h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.staff .position {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 20px;
+}
+.ftco-social{
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.ftco-social a {
+  font-size: 18px;
+  margin: 0 10px;
+  color: #333;
+}
+.ftco-animate{
+  align-items: center;
+}
+
+

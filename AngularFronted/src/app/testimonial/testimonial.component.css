@@ -1,0 +1,176 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+  animation: backgroundAnimation 10s linear infinite; /* Add background animation */
+}
+
+/* Define the background animation keyframes */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/* Style for the reviews heading */
+/* Style for the reviews heading */
+.reviews-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reviews-heading h2 {
+  font-size: 36px;
+  color: #333; /* Heading text color */
+  margin-bottom: 10px;
+  position: relative; /* Add relative positioning for the underline */
+  display: inline-block; /* Make the underline only as wide as the text */
+}
+
+/* Underline styles */
+.reviews-heading h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px; /* Adjust the underline height */
+  background-color: #007BFF; /* Underline color */
+  position: absolute;
+  bottom: -5px; /* Adjust the distance from the text */
+  left: 0;
+  transform-origin: left center;
+  transform: scaleX(0); /* Initial state: no underline */
+  transition: transform 0.3s ease; /* Add animation */
+}
+
+/* Add more styles as needed */
+
+/* Hover animation for the underline */
+.reviews-heading h2:hover::after {
+  transform: scaleX(1); /* Expand the underline on hover */
+}
+
+
+/* Add more styles as needed */
+
+/* Style for the reviews container */
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between reviews */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  height: 100vh;
+}
+
+
+/* Style for each review card */
+.review-card {
+  border: 1px solid ; /* Border style and color */
+  border-radius: 10px; /* Rounded corners for the card */
+  padding: 10px; /* Reduced padding to make the card smaller */
+  flex: 1; /* Equal width for each card, adapts to the number of cards per row */
+  max-width: calc(25% - 20px); /* Adjust the width for smaller cards */
+  box-sizing: border-box;
+  position: relative; /* Add relative positioning for the decorative borders */
+  transition: transform 0.3s ease; /* Transition for the hover effect */
+  background-image: linear-gradient(to bottom, #ff660070, #97b4d3); /* Set the gradient background */
+  color: #fff; /* Text color on the gradient background */
+}
+
+/* Create a unique animation for each card on hover */
+.review-card:hover {
+  transform: rotate(5deg) scale(1.05); /* Rotate and scale up the card on hover */
+}
+/* Create the top border design */
+.review-card::before {
+  content: "";
+  position: absolute;
+  top: -5px; /* Adjust the distance from the top of the card */
+  left: 0;
+  right: 0;
+  height: 5px; /* Adjust the height of the decorative border */
+  background: linear-gradient(90deg, #9ce22b, #54a7d3); /* Gradient border colors */
+  border-radius: 10px 10px 0 0; /* Rounded corners for the top border */
+}
+
+/* Create the bottom border design */
+.review-card::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Adjust the distance from the bottom of the card */
+  left: 0;
+  right: 0;
+  height: 5px; /* Adjust the height of the decorative border */
+  background: linear-gradient(90deg, #edc62781, #34abe2); /* Gradient border colors */
+  border-radius: 0 0 10px 10px; /* Rounded corners for the bottom border */
+}
+
+/* Add more styles as needed */
+
+
+/* Style for client info (avatar and name) */
+.client-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.client-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.client-info h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Style for the review text */
+.review-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Style for the star rating */
+.rating {
+  font-size: 24px;
+  color: #f5d322; /* Yellow color for stars */
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .review-card {
+      max-width: calc(50% - 20px); /* Two cards per row on smaller screens */
+  }
+}
+
+@keyframes colorAnimation {
+  0% {
+      color: #333; /* Initial color */
+  }
+  50% {
+      color: #ff6600; /* Midway color */
+  }
+  100% {
+      color: #0077b6; /* Final color */
+  }
+}
+
+/* Style for animated text (initial state) */
+.animated-text {
+  animation: colorAnimation 3s linear infinite; /* Adjust the duration and timing as needed */
+}
+

@@ -1,0 +1,148 @@
+/* Add some general styling */
+.styled-form {
+  padding: 20px;
+}
+
+/* Style the form fields */
+.form-label {
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style the buttons */
+.modal-footer button {
+  margin-right: 10px;
+}
+
+/* Add background color to the modal content */
+.modal-content {
+  background-color: #f2f2f2;
+}
+
+/* Style the modal header */
+.modal-header {
+  background-color: #51c8d1;
+  color: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style the modal title */
+.modal-title {
+  font-size: 24px;
+}
+
+/* Style the close button */
+.btn-close {
+  color: #fff;
+}
+
+/* Style the image */
+/*img {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+*/
+.modal-body{
+  background-image: url("../../../assets/images/bg-6.webp");
+}
+
+/*table content*/
+/* Navbar Styles */
+.navbar {
+  background-color: #f43513; /* Set the background color */
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ed533b;
+}
+
+.btn-outline-success {
+  font-weight: bold;
+  border-radius: 5px;
+  color: #28a7465a;
+  border-color: #28a745;
+}
+
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #577ddc;
+  border-color: #28a745;
+}
+
+/* Style the search form */
+form.d-flex {
+  background-color: #ffcc00; /* Yellow background color */
+  padding: 10px; /* Add some padding for spacing */
+}
+
+
+.form-control {
+  border-color: #007bff;
+}
+
+
+.btn-outline-primary {
+  color: #fff;
+  border-color: #007bff;
+}
+
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+/* Style the table */
+.table {
+  width: 100%;
+  background-color: #fff;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style table headers */
+.table th {
+
+  color: #000;
+}
+
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+.table tbody tr:hover {
+  background-color: #5791e1;
+}
+
+
+.table-actions {
+  text-align: center;
+
+}
+
+
+@media (max-width: 768px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+

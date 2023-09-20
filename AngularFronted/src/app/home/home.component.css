@@ -1,0 +1,50 @@
+.container {
+  margin: 30px auto;
+  text-align: center;
+
+}
+
+.card {
+  width: 50rem;
+  margin: 0 auto;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(#FFD3A5, #FD6585);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+
+.btn-danger:hover {
+  background-color: #476ce5;
+}
+
+.btn-danger:focus {
+  outline: none;
+}
+
